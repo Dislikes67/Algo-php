@@ -35,6 +35,48 @@ $phrase = str_replace($w1,$w2,$phrase);
 echo $phrase;
 ?>
 
+<h1>Exercice 4</h1>
+
+<p> Ecrire un algorithme permettant de savoir si une phrase est palindrome.<p>
+
+<?php
+    function Palindrome($string){
+        if (strrev($string) == $string){
+            return 1;       
+        }
+        else{
+        return 0;
+        }
+    }
+    //$trimmed = trim($phrase2)//
+    $phrase2 = "ta bete te bat";
+        if(Palindrome($phrase2)){
+            echo "Palindrome";
+    }
+    else{
+    echo "Not a Palindrome";
+}
+?>
+
+<h1>Exercice 5<h1>
+
+<p>Ecrire un algorithme qui déclare une valeur en francs et qui la convertit en euros (arrondie à 2 décimales).<p>
+
+<?php
+$number = 34560.45
+$prixeuro = $number * 6,55957;
+
+echo "Le prix en euros est de $prixeuro";
+
+
+?>
+
+
+
+
+
+
+
 
 
 
