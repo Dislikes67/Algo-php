@@ -3,7 +3,7 @@
 <p>Ecrire un algorithme permettant de renvoyer la catégorie d'un enfant en fonction de son âge<p>
 
 <?php
-//poussin entre 6 et 7 ans ; Pupille entre 8 et 9 ans ; Minime entre 10 et 11 ans ; Cadet à partir de 12 ans
+//Poussin entre 6 et 7 ans, Pupille entre 8 et 9 ans, Minime entre 10 et 11 ans, Cadet à partir de 12 ans.
 $age = 10;
 
 if ($age>=12) {
@@ -25,4 +25,4 @@ elseif ($age<=8 && $age>=5) {
 else {
     echo "Non pris en charge";
 }
-?>    
+?>
