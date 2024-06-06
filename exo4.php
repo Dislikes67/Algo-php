@@ -3,20 +3,30 @@
 <p> Ecrire un algorithme permettant de savoir si une phrase est palindrome.<p> 
 
 <?php
-    function Palindrome($string){
-        if (strrev($string) == $string){
-            return 1;       
-        }
-        else{
-        return 0;
-        }
-    }
-    
-    $phrase2 = "ta bete te bat";  //streplace strtolower strrev
-        if(Palindrome($phrase2)){
-            echo "Palindrome";
-    }
-    else{
-    echo "Not a Palindrome";
+$phrase = "Engage le jeu que je le gagne"; //phrase de base
+$phraseMin = strtolower($phrase); //la phrase mise en minuscule
+$phraseSansEspaces = str_replace(" ","", $phraseMin); //remplacement des espaces par pas d'espaces -->  (" ","", $phraseMin)
+$phraseReverse = strrev($phraseSansEspaces); // reverse pour comparaison des deux phrases
+// Toujours faire étape par étape
+if($phraseSansEspaces == $phraseReverse) {
+    echo "La phrase est palindrome";
+} else {
+    echo "La phrase n'est pas palindrome";
 }
+
+// ternaire / alternative au "if - else"
+echo ($phraseSansEspaces == $phraseReverse) ? "Phrase est palindrome" : "Phrase non palindrome";
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+

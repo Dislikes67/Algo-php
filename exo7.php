@@ -8,7 +8,7 @@ $age = 10;
 
 if ($age>=12) {
     
-    echo "cadet";
+    echo "Cadet";
 }
 elseif ($age<=12 && $age>=9) {
 
