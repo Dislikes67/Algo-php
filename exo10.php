@@ -8,7 +8,7 @@ $montantaPayer = 152;
 $montantVerse = 200;
 $rendu = 48;
 
-if ($rendu) {
+if ($rendu>=10) {
     # code...
 }
 
