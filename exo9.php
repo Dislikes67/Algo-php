@@ -8,7 +8,7 @@ $sexe ="H";
 echo "Age : $age<br>";
 echo "Sexe : $sexe<br>";
 
-if (($sexe=="F" && $age>=18 && $age<=35) || ($sexe=="H" && $age>20)) {
+if (($sexe=="F" && $age>=18 && $age<=35) || ($sexe=="H" && $age>20)) { // utiliser les ||(ou) pour ajouter une condition sur la même ligne
     echo "La personne est imposable.<br>";
 }
 else {
