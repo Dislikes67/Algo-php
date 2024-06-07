@@ -4,13 +4,24 @@
 
 
 <?php
+
+// billet de 10e, 5e pieces de 2e et 1e
 $montantaPayer = 152;
 $montantVerse = 200;
 $rendu = 48;
 
-if ($rendu>=10) {
-    # code...
-}
+$dix= intdiv($rendu,10);
+$reste = ($rendu % 10);
+
+$cinq = 0;
+$deux = 0;
+$un = 0;
+intdiv($rendu,10);
+
+
+
+
+
 
 
 
