@@ -13,11 +13,12 @@ $rendu = 48;
 $dix= intdiv($rendu,10);
 $reste = ($rendu % 10);
 
-$cinq = 0;
+$cinq = intdiv($reste,5);
+$reste2 = intdiv($r);
 $deux = 0;
 $un = 0;
-intdiv($rendu,10);
 
+echo "$dix";
 
 
 
