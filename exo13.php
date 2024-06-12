@@ -9,8 +9,11 @@ $notes = [10,12,8,19,3,16,11,13,9];
 $somme = array_sum($notes);
 $moyenne = $somme / count($notes);
 $arrondi = round($moyenne, 2);
+    echo "Les notes obtenus par l'élève sont :";
 
 foreach ($notes as $note) {
     echo $note.',';
 }
+
+    echo "<br>Sa moyenne générale est donc de : $arrondi";
 ?> 
