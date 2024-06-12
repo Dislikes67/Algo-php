@@ -9,7 +9,9 @@ $marques = ["Peugeot", "Renault", "BMW", "Mercedes"];
 $nbmarques = count($marques);
 
 echo "Il y a $nbmarques marques de voitures dans le tableau :<br>";
-echo $marques[0]. ' <br>' . $marques[1]. ' <br>' . $marques[2]. ' <br>' . $marques[3];
+foreach ($marques as $marque) {
+    echo '<p>'.$marque.'</p>';
+}
 
 
 

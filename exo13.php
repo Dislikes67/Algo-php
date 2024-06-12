@@ -10,5 +10,7 @@ $somme = array_sum($notes);
 $moyenne = $somme / count($notes);
 $arrondi = round($moyenne, 2);
 
-echo "Les notes obtenus par l'élève sont : print_r($notes)";
+foreach ($notes as $note) {
+    echo $note.',';
+}
 ?> 
